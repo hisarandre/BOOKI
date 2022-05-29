@@ -1,0 +1,39 @@
+body {
+    font-size: 33px;
+  }
+
+
+/* HEADER */
+
+header nav {
+    height: 270px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  header nav .logo-booki {
+    height: 95px;
+    margin: 40px 0 40px 0;
+  }
+  
+  header nav ul {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul a {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    border-width: 0 0 8px 0;
+  }
+  
+  header nav ul a:hover {
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav li {
+    margin: auto;
+  }
