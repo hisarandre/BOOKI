@@ -1,0 +1,22 @@
+body {
+    font-size: 26px;
+  }
+
+  /* HEADER */
+
+header nav {
+  height: 170px;
+}
+
+header nav .logo-booki {
+  height: 60px;
+  margin: 25px 0 25px 0;
+}
+
+header nav ul {
+  height: 60px;
+}
+
+header nav ul a {
+  border-width: 0 0 4px 0;
+}
