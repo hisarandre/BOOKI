@@ -1,6 +1,6 @@
-body {
-    font-size: 33px;
-  }
+body { font-size: 33px; }
+
+main { padding: 0 40px; }
 
 /* HEADER */
 
@@ -11,8 +11,8 @@ header nav {
   }
   
   header nav .logo-booki {
-    height: 95px;
-    margin: 40px 0 40px 0;
+    width: 130px;
+    margin: 52px 0 40px 0;
   }
   
   header nav ul {
@@ -24,9 +24,114 @@ header nav {
     width: 50%;
     padding: 0;
     margin: 0;
+    border-color: var(--lighgrey);
     border-width: 0 0 8px 0;
   }
 
   header nav li {
     margin: auto;
   }
+
+/* SECTION SEARCH */
+
+#search header {
+  margin-top: 65px;
+  margin-bottom: 70px;
+}
+
+#search h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+/* --- search bar */
+
+#search-bar {
+  width: 100%;
+  margin-bottom: 70px;
+  font-size: 33px;
+  position: relative;
+}
+
+#search-bar .fas.fa-map-marker-alt {
+  width: 105px;
+  height: 105px;
+  border-radius: 25px 0 0 25px;
+}
+
+#search-bar input {
+  width: calc(100% - 155px);
+  height: 105px;
+  padding: 0 36px; 
+}
+
+#search-bar .search-btn {
+  display: none;
+}
+
+#search-bar .search-icon-btn {
+  width: 105px;
+  height: 105px;
+  background-color: var(--primary);
+  font-weight: 600;
+  color: white;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* --- filters */
+
+#filters-area {
+  font-size: 36px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filters-title {
+  margin: 0 0 3px 5px;
+}
+
+.filters-btn-area {
+  margin-left: 5px;
+}
+
+.filters-btn {
+  height: 100px;
+  border-radius: 50px;
+  margin: 25px 22px 5px 0;
+}
+
+.filters-btn .fas {
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.filters-btn-text { 
+  font-size: 33px;
+  padding: 0 35px 0 25px; 
+}
+
+/* --- info text */
+
+#info-text-area {
+  margin-top: 65px;
+  margin-left: 5px;
+}
+
+#info-text-area .fas {
+  font-size: 20px;
+  width: 63px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+#info-text-area .info-text {
+  font-size: 32px;
+}

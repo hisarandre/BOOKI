@@ -1,0 +1,11 @@
+/* SECTION SEARCH */
+/* --- filters */
+
+#filters-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.filters-title {
+    margin: 0 0 20px 0;
+  }

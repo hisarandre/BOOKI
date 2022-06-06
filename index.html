@@ -5,36 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Booki</title>
-    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablet.css">
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css">
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/small-mobile.css">
-    
-    <link rel="stylesheet"
-    href="https://fonts.google.com/specimen/Raleway">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 992px)" href="/css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="/css/small-mobile.css">
 </head>
 
 <body>
-
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
         <nav>
-            <img class="logo-booki" src="images/logo/Booki.png" alt="logo Booki" />
+            <img class="logo-booki" src="/images/logo/Booki.svg" alt="logo Booki" />
             <ul>
-                <a href="#"><li>Hébergements</li></a>
-                <a href="#"><li>Activités</li></a>
+                <a href="#places"><li>Hébergements</li></a>
+                <a href="#activities"><li>Activités</li></a>
             </ul>
         </nav>
     </header>
 
-    <!-- Main -->
+    <!-- MAIN -->
     <main>
+        <!--SECTION SEARCH-->
+        <section id="search">
+            <header>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </header>
+            <!--search bar-->
+            <form id="search-bar" method="post">
+                <span class="fas fa-map-marker-alt"></span>
+                <input type="search" placeholder="Marseille, France" name="site-search" id="site-search" />
+                <button type="submit" class="search-btn">Rechercher</button>
+                <button type="submit" class="search-icon-btn"><span class="fas fa-search"></span></button>
+            </form>
+            <!-- filters -->
+            <nav id="filters-area">
+                <div class="filters-title">Filtres</div>
+                <div class="filters-btn-area">
+                    <button class="filters-btn"><span class="fas fa-money-bill-wave"></span> <span class="filters-btn-text">Économique</span></button>
+                    <button class="filters-btn"><span class="fas fa-child"></span> <span class="filters-btn-text">Familial</span></button>
+                    <button class="filters-btn"><span class="fas fa-heart"></span> <span class="filters-btn-text">Romantique</span></button>
+                    <button class="filters-btn"><span class="fas fa-dog"></span> <span class="filters-btn-text">Animaux autorisés</span></button>
+                </div>
+            </nav>
+            <!-- infos -->
+            <aside id="info-text-area">
+                <span class="fas fa-info"></span> <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
+            </aside>
+        </section>
 
+        <!--SECTION PLACES-->
+        <section></section>
     </main>
 
+    <!-- FOOTER -->
+    <footer>
+    </footer>
 </body>
 
 </html>
