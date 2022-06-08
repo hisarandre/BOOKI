@@ -1,22 +1,111 @@
-body {
-    font-size: 26px;
-  }
+@media only screen and (max-width: 480px) {
+
+  body {
+      font-size: 22px;
+    }
+  
+  main { padding: 0 25px; }
 
   /* HEADER */
 
-header nav {
-  height: 170px;
-}
+  #menu {
+    height: 170px;
+  }
 
-header nav .logo-booki {
-  width: 80px;
-  margin: 25px 0 25px 0;
-}
+  #menu .logo-booki {
+    width: 80px;
+    margin: 30px 0 15px 0;
+  }
 
-header nav ul {
-  height: 60px;
-}
+  #menu ul {
+    height: 60px;
+  }
 
-header nav ul a {
-  border-width: 0 0 4px 0;
+  #menu a {
+    border-width: 0 0 4px 0;
+  }
+
+  /* SECTION SEARCH */
+
+  #search header {
+    margin: 40px 0 45px 0;
+  }
+
+  #search h1 {
+    font-size: 26px;
+  }
+
+  /* --- search bar */
+
+  #search-bar {
+    font-size: 23px;
+    margin: 0 0 43px 0;
+  }
+
+  #search-bar .fas.fa-map-marker-alt {
+    width: 65px;
+    height: 65px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  #search-bar input {
+    width: calc(100% - 115px);
+    height: 65px;
+    padding: 0 36px; 
+  }
+
+  #search-bar .search-icon-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+  }
+
+  /* --- filters */
+
+  #filters-area {
+    font-size: 23px;
+  }
+
+  .filters-title {
+    margin: 0 0 3px 0;
+  }
+
+  .filters-btn-area {
+    margin-left: 0;
+  }
+
+  .filters-btn {
+    height: 65px;
+    margin: 15px 12px 0 5px;
+  }
+
+  .filters-btn .fas {
+    font-size: 24px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .filters-btn-text { 
+    font-size: 21px;
+    padding: 0 18px 0 13px; 
+  }
+
+  /* --- info text */
+
+  #info-text-area {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  #info-text-area .fas {
+    font-size: 14px;
+    width: 41px;
+    height: 30px;
+    margin-right: 12px;
+  }
+
+  #info-text-area .info-text {
+    font-size: 20px;
+  }
+
 }

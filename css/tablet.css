@@ -1,11 +1,15 @@
-/* SECTION SEARCH */
-/* --- filters */
+@media only screen and (max-width: 992px) {
 
-#filters-area {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    /* SECTION SEARCH */
+    /* --- filters */
 
-.filters-title {
-    margin: 0 0 20px 0;
-  }
+    #filters-area {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters-title {
+        margin: 0 0 20px 0;
+    }
+
+}

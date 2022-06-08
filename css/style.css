@@ -2,6 +2,7 @@
   --background: white;
   --black:#202020;
   --lighgrey: #F2F2F2;
+  --darkgrey: #D9D9D9;
   --primary: #0065FC;
   --secondary: #DEEBFF;
 }
@@ -15,33 +16,39 @@ body {
   color: var(--black);
 }
 
-main { padding: 0 54px; }
+main { padding: 0 50px; }
 
 a { color: var(--black); }
+h2 { font-size: 22px; }
+h3 { font-size: 16px; }
 
 /* HEADER */
 
-header nav {
+#menu {
   height: 116px;
   display: flex;
   justify-content: space-between;
 }
 
-header .logo-booki {
+#menu .logo-booki {
   width: 60px;
   margin-left: 70px;
-  align-self: center;
   position: relative;
   top: 7px;
 }
 
-header nav ul {
+#menu ul {
   display: flex;
+  height: 100%;
   list-style: none;
   margin-right: 40px;
 }
 
-header nav ul a {
+#menu li {
+  display: flex;
+}
+
+#menu a {
   display: flex;
   align-items: center;
   padding: 0 20px 0 30px;
@@ -52,7 +59,7 @@ header nav ul a {
   transition: color, border 0.2s ease-out; 
 }
 
-header nav ul a:hover {
+#menu a:hover {
   color: var(--primary);
   border-color: var(--primary);
 }
@@ -60,7 +67,7 @@ header nav ul a:hover {
 /* SECTION SEARCH */
 
 #search header {
-  margin-bottom: 18px;
+  margin: 0 5px 18px 5px;
 }
 
 #search h1 {
@@ -74,7 +81,7 @@ header nav ul a:hover {
 #search-bar {
   display: flex;
   width: 420px;
-  margin-bottom: 25px;
+  margin: 0 0 25px 5px;
   font-size: 18px;
 }
 
@@ -110,6 +117,7 @@ header nav ul a:hover {
   border-radius: 0 15px 15px 0;
   transition: opacity 0.2s ease-out; 
   display: visible;
+  cursor: pointer;
 }
 
 #search-bar .search-btn:hover { opacity: 0.9; }
@@ -123,6 +131,7 @@ header nav ul a:hover {
   align-items: center;
   font-size: 18px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .filters-title {
@@ -139,12 +148,13 @@ header nav ul a:hover {
   font-weight: bold;
   background-color: var(--background);
   border-radius: 30px;
-  border: 3px #D9D9D9 solid;
+  border: 3px var(--darkgrey) solid;
   margin: 5px 30px 5px 0;
   padding: 0;
   display: flex;
   align-items: center;
   transition: all 0.2s ease-out; 
+  cursor: pointer;
 }
 
 .filters-btn:hover {
@@ -173,7 +183,7 @@ header nav ul a:hover {
   display: flex;
   align-items: center;
   margin-top: 30px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 #info-text-area .fas {
@@ -187,4 +197,122 @@ header nav ul a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* SECTION PLACES */
+
+#places {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.places-card .fas.fa-star, .places-popular-card .fas.fa-star { 
+  font-size: 12px;
+  letter-spacing: -3px;
+}
+
+.blue-star { color: var(--primary) }
+
+.grey-star { color: var(--darkgrey) }
+
+/* --- places marseille */
+
+#places-marseille {
+  width: 65.6%;
+  padding: 2.9%;
+  background-color: var(--lighgrey);
+  border-radius: 20px;
+}
+
+#places-marseille-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  row-gap: 30px;
+  margin-top: 20px;
+}
+
+#places-marseille-cards a {
+  width: 30.6%;
+}
+
+.places-card {
+  height: 100%;
+  background-color: var(--background);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding: 2%;
+  line-height: 1.4;
+  transition: all .2s ease-in-out;
+}
+
+.places-card:hover {
+  transform: scale(1.05);
+}
+
+.places-card img {
+  height: 115px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.places-card-infos {
+  margin: 0 5% 2% 5%;
+}
+
+/* --- places popular*/
+
+#places-popular {
+  width: 31.5%;
+  padding: 2.9%;
+  background-color: var(--lighgrey);
+  border-radius: 20px;
+}
+
+#places-popular header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#places-popular-cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 20px;
+}
+
+.places-popular-card {
+  height: 145px;
+  display: flex;
+  background-color: var(--background);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  line-height: 1.2;
+  padding: 1.5%;
+  transition: all .2s ease-in-out;
+}
+
+.places-popular-card:hover {
+  transform: scale(1.05);
+}
+
+.places-popular-card img {
+  width: 38%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+}
+
+.places-popular-card-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 4% 4% 2% 6%;
+}
+
+.push {
+  margin-top: auto;
 }
