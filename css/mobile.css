@@ -1,4 +1,5 @@
 @media only screen and (max-width: 768px) {
+
   /* ==================== GLOBAL ===================  */
 
   body { font-size: 33px; }
@@ -260,7 +261,7 @@
 
   footer section {
     margin: 0 7%;
-    width: 100%;
+    width: calc(100% - 14%);
     
   }
   footer h3 {

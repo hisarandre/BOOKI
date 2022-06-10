@@ -149,6 +149,7 @@
   
   #places-popular-cards .card {
     height: 185px;
+    line-height: 1.2;
   }
   
   #places-popular-cards .card img {
