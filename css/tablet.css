@@ -1,7 +1,7 @@
 @media only screen and (max-width: 992px) {
 
-    /* SECTION SEARCH ======================================= */
-    /* --- filters */
+    /* ==================== SECTION SEARCH =================== */
+    /* ---------------------- filters ---------------------- */
 
     #filters-area {
         flex-direction: column;
@@ -10,6 +10,30 @@
 
     .filters-title {
         margin: 0 0 20px 0;
+    }  
+
+    /* ==================== SECTION PLACES =================== */
+
+    #places {
+        flex-direction: column-reverse;
     }
+    
+    #places-marseille {
+        width: 100%;
+        margin-top: 2%;
+    }
+    
+    #places-popular {
+        width: 100%;
+    }
+    
+    /* ------------------- card places popular -------------------*/
+
+    #places-popular-cards .card {
+        padding: 0.5%;
+    }
+
+    
+
 
 }

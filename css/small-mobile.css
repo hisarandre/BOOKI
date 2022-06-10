@@ -1,18 +1,24 @@
 @media only screen and (max-width: 480px) {
 
-  body {
-      font-size: 22px;
-    }
-  
-  main { padding: 0 25px; }
+  /* ==================== GLOBAL ===================  */
 
-  /* HEADER */
+  body { font-size: 22px; }
+
+  /* ----------------- links and titles -------------- */
+
+  h1 { font-size: 26px; }
+
+  h2 { font-size: 28px; }
+
+  h3 { font-size: 22px; }
+
+  /* ===================== HEADER ====================  */
 
   #menu {
     height: 170px;
   }
 
-  #menu .logo-booki {
+  .logo-booki {
     width: 80px;
     margin: 30px 0 15px 0;
   }
@@ -25,17 +31,13 @@
     border-width: 0 0 4px 0;
   }
 
-  /* SECTION SEARCH */
+  /* ==================== SECTION SEARCH =================== */
+  
+  #search { padding: 0 25px; }
 
-  #search header {
-    margin: 40px 0 45px 0;
-  }
+  #search header { margin: 40px 0 45px 0; }
 
-  #search h1 {
-    font-size: 26px;
-  }
-
-  /* --- search bar */
+  /* ---------------------- search bar ---------------------- */
 
   #search-bar {
     font-size: 23px;
@@ -54,13 +56,13 @@
     padding: 0 36px; 
   }
 
-  #search-bar .search-icon-btn {
+  .search-icon-btn {
     width: 65px;
     height: 65px;
     border-radius: 20px;
   }
 
-  /* --- filters */
+  /* ---------------------- filters ---------------------- */
 
   #filters-area {
     font-size: 23px;
@@ -90,7 +92,7 @@
     padding: 0 18px 0 13px; 
   }
 
-  /* --- info text */
+  /* ---------------------- info text ---------------------- */
 
   #info-text-area {
     margin-left: 0;
@@ -99,13 +101,97 @@
 
   #info-text-area .fas {
     font-size: 14px;
-    width: 41px;
+    width: 30px;
     height: 30px;
     margin-right: 12px;
   }
 
   #info-text-area .info-text {
     font-size: 20px;
+  }
+
+  /* ==================== SECTION PLACES =================== */
+
+  #places { margin-top: 45px; }
+
+  /* -------------------------- card --------------------------*/
+
+  .card {
+    border-radius: 30px;
+  }
+  
+  .card-infos {
+    font-size: 20px;
+  }
+  
+  .card .fas { 
+    font-size: 20px;
+  }
+
+  /* ----------------- card places marseille ------------------ */
+
+  #places-marseille-cards {
+    margin-top: 30px;
+    row-gap: 30px;
+  }
+    
+  #places-marseille-cards .card img {
+    height: 145px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  /* ------------------- card places popular -------------------*/
+  
+  #places-popular-cards {
+    margin-top: 40px;
+    row-gap: 20px;
+  }
+  
+  #places-popular-cards .card {
+    height: 185px;
+  }
+  
+  #places-popular-cards .card img {
+    border-radius: 30px 0 0 30px;
+  }
+
+  /* ==================== SECTION ACTIVITIES =================== */
+
+
+  #activities-cards {
+    gap: 25px;
+    margin: 35px 0 60px 0;
+  }
+
+  .double-cards {
+    gap: 25px;
+  }
+
+  .single, .double-1, .double-2, .double-3, .double-4 { 
+    height: 245px; 
+  } 
+
+  .activity-card img {
+    height: calc(100% - 70px);
+  }
+
+  .activity-title {
+    height: 60px;
+  }
+
+  /* ========================== FOOTER ========================= */
+
+  footer {
+    padding: 60px 0;
+    gap: 40px;
+  }
+  
+  footer h3 {
+    margin-bottom: 20px;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
   }
 
 }
