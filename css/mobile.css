@@ -4,7 +4,7 @@
 
   main { padding: 0 40px; }
 
-  /* HEADER */
+  /* HEADER ======================================= */
 
   #menu {
     height: 270px;
@@ -36,7 +36,7 @@
     border-width: 0 0 8px 0;
   }
 
-  /* SECTION SEARCH */
+  /* SECTION SEARCH ======================================= */
 
   #search header {
     margin: 65px 0 70px 0;
@@ -48,7 +48,7 @@
     line-height: 1.2;
   }
 
-  /* --- search bar */
+  /* --- search bar ======================================= */
 
   #search-bar {
     width: 100%;

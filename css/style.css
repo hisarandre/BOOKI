@@ -1,4 +1,6 @@
-:root{
+/* GLOBAL ======================================= */
+
+:root {
   --background: white;
   --black:#202020;
   --lighgrey: #F2F2F2;
@@ -16,13 +18,33 @@ body {
   color: var(--black);
 }
 
-main { padding: 0 50px; }
+main { 
+  padding: 0 50px; 
+}
+
+button {
+  cursor: pointer;
+}
+
+/* links and titles */
 
 a { color: var(--black); }
-h2 { font-size: 22px; }
-h3 { font-size: 16px; }
 
-/* HEADER */
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 16px;
+}
+
+h2 { 
+  font-size: 22px; 
+}
+
+h3 { 
+  font-size: 16px; 
+}
+
+/* HEADER ======================================= */
 
 #menu {
   height: 116px;
@@ -64,16 +86,10 @@ h3 { font-size: 16px; }
   border-color: var(--primary);
 }
 
-/* SECTION SEARCH */
+/* SECTION SEARCH ======================================= */
 
 #search header {
   margin: 0 5px 18px 5px;
-}
-
-#search h1 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 16px;
 }
 
 /* --- search bar */
@@ -117,12 +133,15 @@ h3 { font-size: 16px; }
   border-radius: 0 15px 15px 0;
   transition: opacity 0.2s ease-out; 
   display: visible;
-  cursor: pointer;
 }
 
-#search-bar .search-btn:hover { opacity: 0.9; }
+#search-bar .search-btn:hover { 
+  opacity: 0.9; 
+}
 
-#search-bar .search-icon-btn { display: none; }
+#search-bar .search-icon-btn { 
+  display: none; 
+}
 
 /* --- filters */
 
@@ -130,7 +149,7 @@ h3 { font-size: 16px; }
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   margin-left: 5px;
 }
 
@@ -154,7 +173,6 @@ h3 { font-size: 16px; }
   display: flex;
   align-items: center;
   transition: all 0.2s ease-out; 
-  cursor: pointer;
 }
 
 .filters-btn:hover {
@@ -175,7 +193,9 @@ h3 { font-size: 16px; }
   justify-content: center;
 }
 
-.filters-btn-text { padding: 0 20px 0 12px; }
+.filters-btn-text { 
+  padding: 0 20px 0 12px; 
+}
 
 /* --- info text */
 
@@ -199,7 +219,7 @@ h3 { font-size: 16px; }
   justify-content: center;
 }
 
-/* SECTION PLACES */
+/* SECTION PLACES ======================================= */
 
 #places {
   width: 100%;
@@ -224,6 +244,8 @@ h3 { font-size: 16px; }
   padding: 2.9%;
   background-color: var(--lighgrey);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 #places-marseille-cards {
@@ -261,8 +283,14 @@ h3 { font-size: 16px; }
 }
 
 .places-card-infos {
+  font-size: 14px;
   margin: 0 5% 2% 5%;
 }
+
+#places-marseille .load-more {
+  font-weight: 700;
+  margin: 5% 0 0 2%;
+ }
 
 /* --- places popular*/
 
@@ -310,6 +338,7 @@ h3 { font-size: 16px; }
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-size: 14px;
   margin: 4% 4% 2% 6%;
 }
 
